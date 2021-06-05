@@ -1,0 +1,12 @@
+插件安装指导视频：
+https://www.bilibili.com/video/BV1t54y147od 
+完成后，还需要执行以下步骤： 
+1、esc-界面-动作条-打开冷却时间 （所有wa不显示冷却时间都需要操作这一项，这是系统的冷却监视）
+2、/join 大脚世界频道 
+3、打开伤害数字：/console floatingCombatTextCombatDamage 1 
+4、屏蔽lua错误： /console scriptErrors 0 to hide LUA errors 
+5、esc-elvui-姓名版-禁用 （主播用的plater姓名版）
+6、plater要安装材质包别忘了 （群文件sharemedia） 
+7、施法顺序是details里的action tracker，激活或者关闭从details的插件管理里面找 
+8、团队框架esc-elvui-单位框体-这里可以选择用暴雪的或者elvui的，主播使用的暴雪自带的
+9、之后的插件更新，请使用桃乐豆更新（百度下载）

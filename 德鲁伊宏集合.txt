@@ -1,0 +1,19 @@
+/cast [combat,nostance:1]枭兽形态;[indoors,nocombat,noswimming,nostance:2]潜行;[indoors,swimming,nostance:3]旅行形态;[outdoors,nostance:3]旅行形态;[stance:2]急奔;
+
+#showtooltip 树皮术
+/cast [nostance:1]熊形态;[stance:1]树皮术
+/cast [stance:1]狂暴回复
+/cleartarget
+
+/cast [@mouseover,harm] 阳炎术; [@mouseover,help] [help]回春术;[harm]阳炎术;回春术
+/cast [@mouseover,harm] 阳炎之怒; [@mouseover,help] [help]愈合;[harm]阳炎之怒;愈合
+/cast [@mouseover,harm] 月火术; [@mouseover,help] [help]生命绽放;[harm]月火术;生命绽放
+
+/cast [@cursor] 百花齐放
+/cast [@cursor] 乌索尔旋风
+
+/cast [target=mouseover,exists,nodead][target=player]迅捷治愈
+/cast [target=mouseover,exists,nodead][target=player]清除腐蚀
+
+/cancelaura 星辰领主
+

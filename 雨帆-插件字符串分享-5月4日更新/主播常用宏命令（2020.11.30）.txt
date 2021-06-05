@@ -1,0 +1,42 @@
+最大视角宏：
+ /run SetCVar("cameraDistanceMaxZOOMFactor",2.6)
+
+WCL战斗日志开启：
+/combatlog
+
+开战倒数10秒：
+/dbm pull 10
+
+取消开战倒数：
+/dbm pull 0
+
+爆发起手宏
+/cast 燃烧
+/use 13
+/use 14
+/cast 火焰冲击
+/cast 狂暴
+
+鼠标指向宏：
+/cast [@cursor] 流星
+/cast [@cursor] 烈焰风暴
+/cast [@cursor] 冰冻术
+/cast [@cursor] 净化冲击
+
+解除诅咒(鼠标指向框体则驱队友，无指向驱自己)：
+/cast [target=mouseover,exists] 解除诅咒;解除诅咒
+
+焦点技能(有焦点对焦点目标施法，无焦点对当前目标施法)
+/cast [target=focus,exists] 法术反制;法术反制
+/cast [target=focus,exists] 法术偷取;法术偷取
+/cast [target=focus,exists] 灼烧;灼烧
+
+冰箱宏(按一下冰箱，迅速按2下能线冰箱后秒出)
+/stopcasting
+/cancelAura 寒冰屏障
+/cast 寒冰屏障
+
+
+
+
+

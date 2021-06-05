@@ -1,0 +1,49 @@
+/cast [target=focus,exists] 法术反制;法术反制
+
+/script SetRaidTarget("target",8)
+
+#showtooltip 寒冰屏障
+/stopcasting
+/cancelAura 寒冰屏障
+/cast 寒冰屏障
+
+
+/cast [target=mouseover,exists,harm,nodead] 灼烧;灼烧
+/cast [target=mouseover,exists,harm,nodead] 活动炸弹;活动炸弹
+/cast [target=mouseover,exists,nodead][target=player]缓落术
+/cast [target=mouseover,exists,nodead][target=player]解除诅咒
+
+#showtooltips 暴风雪
+/cast [@cursor] 暴风雪
+
+/cast [@cursor] 烈焰风暴
+/cast [@cursor] 流星
+
+/script macroT,macrot=macroT or 0,GetTime()if not UnitCastingInfo("player")and 0==GetSpellCooldown("隐形术")and macrot-macroT>1 then SendChatMessage("I'm sorry, I'm sorry.","SAY")macroT=macrot;end
+/cast 隐形术
+
+
+/focus [target=mouseover]
+鼠标悬停处互动：shift + 下滚轮
+目标互动：shift + 上滚轮
+
+#showtooltip [nopet] [target=pet,dead] 召唤水元素; [pet] 冰冻术
+/cast [nopet]召唤水元素
+/cast [target=pet,dead]召唤水元素
+/stopmacro [target=pet,dead]
+/cast [@cursor] 冰冻术
+/petattack [harm]
+
+#showtooltip
+/cast 寒冰箭
+/petattack [harm]
+
+/cast [nochanneling:变易幻能] 不死鸟之焰
+/cancelAura 灵魂燃烧
+
+/cast [nochanneling:变易幻能] 能量符文
+
+/cast 燃烧
+/cast 狂暴
+/use 13
+/cast 火焰冲击
