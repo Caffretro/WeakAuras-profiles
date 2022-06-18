@@ -1,0 +1,102 @@
+指向设置焦点（之谁按宏就设谁为焦点不需要选中目标 更好的给焦点打断 凿击等等控制） 
+#showtooltip 
+/focus mouseover 
+
+焦点暗部脚踢 
+#showtooltip 脚踢
+/stopcasting 
+/Cast [target=focus,exists] 暗影步;暗影步
+/Cast [target=focus,exists] 脚踢;脚踢
+
+自动嫁祸宏 需要导入自动嫁祸wa（在群文件wa字符串整合包里）
+
+#showtooltip 嫁祸诀窍
+/click AutoTankMisdirect
+
+
+潜行偷袭宏   （能潜行就潜行 绑定偷袭和冷血   ）
+#showtooltip 冷血
+/cast [nostance:1]潜行 
+/cast 冷血
+/cast 偷袭
+
+
+狂徒必备手枪宏（目标死后手枪自动切目标  代替手枪键位）
+#showtooltip 
+/startattack
+/施放 手枪射击
+
+
+狂徒必备眉心宏（目标死后眉心自动切目标  代替眉心键位）
+#showtooltip 
+/startattack
+/施放 正中眉心
+
+敏锐必备宏  （目标死后黑火药自动切目标  代替黑火药键位）
+#showtooltip 
+/startattack
+/施放 黑火药
+
+冲动开饰品宏
+#showtooltip 冲动
+/cast 冲动
+/use 13
+/use 14
+/cast 血性狂怒(种族特长)
+/施放 狂暴(种族特长)
+
+
+
+
+鼠标指向抓钩（不用左键确认 类似于lol智能施法）
+
+#showtooltip 抓钩
+/cast [nostance:1]潜行 
+/cast [@cursor]抓钩
+
+抓贼宏（可以当tab用）
+#showtooltip 闷棍
+/targetenemy 
+/cast 闷棍  
+
+消失伏击宏 （代替消失）
+#showtooltip
+/STOPATTACK
+/castsequence reset=4 消失,伏击
+
+
+影舞死符刀扇一件开启宏（不是必备宏 需要多个按键但是省很多操作在aoe的时候可以无脑这个宏加黑火药aoe）缺点是如果是在前行下的话 这个宏的影舞不会第1时间开出来解决办法就是不潜行暗部上去或者暗打刀扇挂切割后等怪聚齐在用此宏
+
+#showtooltip 死亡符记
+/施放 血性狂怒(种族特长)
+/施放 死亡符记
+/施放 暗影之舞
+/施放 袖剑风暴
+
+
+
+
+
+指向死标斩击宏  代替死标键位
+#showtooltip 死亡标记
+/startattack [stance:0]
+/cast [@mouseover,harm,nodead][harm,nodead,stance:1/2] 死亡标记
+/castsequence [harm,nodead,stance:0] reset=2 死亡标记, 斩击
+
+
+
+必爆狂徒 没朋友起手宏（使用时机看视频教学）
+#showtooltip 冲动
+/cast 剑刃乱舞
+/cast 冲动
+/use 昔日罪孽之忆
+/cast [nostance:1]潜行 
+/cast [@cursor]抓钩
+
+换武器宏  （16代表主手  17 代表副手  后面是想换的武器名字） 用来大米切换无光之力 和罪孽附魔  
+/equipslot 17 虔心者的贴身匕首
+
+鼠标指向骨刺 
+#showtooltip 锯齿骨刺
+/cast [@mouseover,harm,nodead][]锯齿骨刺(通灵领主)
+

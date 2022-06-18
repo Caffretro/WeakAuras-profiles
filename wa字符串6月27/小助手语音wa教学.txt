@@ -1,0 +1,6 @@
+第1步吧 CustomMaterials 文件 放在World of Warcraft\_retail_\Interface 里和AddOns      并排
+ 
+
+第2部导入我的wa 敏锐 通用 狂徒 大概4 5个以上都导入就可以了
+
+第3 如果有不喜欢或者想替换的语音就在CustomMaterials里删除或者代替  但是名字别变 语音格式ogg 
